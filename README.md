@@ -3,6 +3,7 @@ A low effort CLI util that helps in adding emotes to the WoW Twitch Emotes addon
 Dependencies: 
 1. ffmpeg
 2. imagemagick
+3. bash
 
 Usage:
 1. Put all the emotes and the executable file in the same folder. (Optimally the folder should only contain these.)
