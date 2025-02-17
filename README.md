@@ -4,7 +4,7 @@ Dependencies:
 1. ffmpeg
 2. imagemagick
 3. webpinfo/webpmux
-4. 
+
 Usage:
 1. Put all the emotes and the executable file in the same folder. (Optimally the folder should only contain these.)
 2. Run the executable with: java -jar BuhEmoteAdder.jar
