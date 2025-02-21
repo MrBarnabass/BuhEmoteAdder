@@ -7,7 +7,7 @@ public class AVIFTextGenerator {
         for (String s : fileList) {
             if (s != null) {
                 try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputText, true))) {
-                    writer.write("\t[\"" + s.substring(0, s.length() - 5) + "\"] = \"" + s.substring(0, s.length() - 5) + "\",");
+                    writer.write("- " + s.substring(0, s.length() - 5));
                     writer.newLine();
                 } catch (IOException e) {
                     System.err.println(e.getMessage());

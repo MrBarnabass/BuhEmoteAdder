@@ -8,8 +8,7 @@ public class convertAVIFtoTGA {
                     createFrames(fileList[i]);
                     mergeFrames(fileList[i]);
                 } catch (Exception e) {
-                    System.out.println(e);
-                    //staticConversion(fileList[i]);
+                    staticConversion(fileList[i]);
                 }
             }
         }
@@ -36,7 +35,7 @@ public class convertAVIFtoTGA {
         RunCommand.magickProcessBuilder(command);
     }
 
-    /*private static void staticConversion(String fileList) {
+    private static void staticConversion(String fileList) {
         try {
             String[] command = {
                     "ffmpeg",
@@ -48,5 +47,5 @@ public class convertAVIFtoTGA {
         } catch (Exception ex) {
             throw new RuntimeException(ex);
         }
-    }*/
+    }
 }

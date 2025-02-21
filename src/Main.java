@@ -12,6 +12,8 @@ public class Main {
 
         AVIFTextGenerator.SecondPart(avifFileList, outputText);
         WEBPTextGenerator.SecondPart(webpFileList, outputText);
-        //TextGenerator.ThirdPart(avifFileList, outputText);
+
+        AVIFTextGenerator.ThirdPart(avifFileList, outputText);
+        WEBPTextGenerator.ThirdPart(webpFileList, outputText);
     }
 }
