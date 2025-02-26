@@ -45,7 +45,17 @@ public class convertAVIFtoTGA {
             };
             RunCommand.ffmpegProcessBuilder(command);
         } catch (Exception ex) {
-            throw new RuntimeException(ex);
+            String[] command = {
+                    "ffmpeg",
+                    "-i", fileList,
+                    "-pix_fmt", "rgba",
+                    fileList.substring(0, fileList.length() - 5) + ".tga"
+            };
+            try {
+                RunCommand.ffmpegProcessBuilder(command);
+            } catch (Exception ex2){
+                System.out.println(ex2);
+            }
         }
     }
 }
